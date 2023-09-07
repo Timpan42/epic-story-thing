@@ -6,7 +6,8 @@ export function story(element) {
     let index = 0
 
     buttons.addEventListener('click', (e) => {
-        //text.document.createElement('p')
+
+        //Måste hämta ett index från knappen när dem trycks så man kan gå till nästa val 
 
         while(buttons.firstChild){
             buttons.removeChild(buttons.firstChild)
@@ -24,25 +25,26 @@ export function story(element) {
             id: 0,
             text: "Hello my friend this is a test ",
             options: [{
-                text: "test 1",
+                text: "Till test 2",
                 choses: { start: true },
                 nextId: 1
             }, {
                 text: "test 1",
                 choses: { start: false },
-                nextId: 1
+                nextId: 0
             }
             ]
         }, {
             id: 1,
             text: "Hello my friend this is a test 2",
             options: [{
-                text: "test 2",
+                text: "Till test 1",
                 choses: { start: true },
                 nextId: 0
             }, {
                 text: "test 2",
                 choses: { start: false },
+                nextId: 1
                 
             }
             ]
