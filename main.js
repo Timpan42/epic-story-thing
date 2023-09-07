@@ -1,12 +1,10 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-import { story } from './story.js'
+import { program } from './program.js'
+
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <div id="text">
+    <div id="text_Container">
       <h1> Hello and welcome to the story of Tim Fagerdal,the human fruit</h1>
       <h2> This is a interactive story about me as a fruit, that loves making food, it is mostly pasta. It is written by
         ChatGPT so it is going to be weird</h2>
@@ -17,12 +15,11 @@ document.querySelector('#app').innerHTML = `
       <p> <b> <ins>Do you want to play?</ins></b> </p>
     </div>
     
-    <div id="buttons">
-      <button> YES </button>
-      <button> NO </button>
+    <div id="button_Container">
+      <button id="start" > YES </button>
     </div>
 
 </main>
 `
 
-story(document.querySelector('#app'))
+program(document.querySelector('#app'))

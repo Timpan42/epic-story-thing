@@ -1,0 +1,48 @@
+[
+    {
+        "id": 0,
+        "text": "Hello my friend this is a test ",
+        "options": [
+            {
+                "text": "Till test 2",
+                "choses": {
+                    "start": true
+                },
+                "nextId": 1
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "text": "Hello my friend this is a test 2",
+        "options": [
+            {
+                "text": "Till test 1",
+                "choses": {
+                    "start": true
+                },
+                "nextId": 0
+            },
+            {
+                "text": "Till test jag vet inte ",
+                "choses": {
+                    "start": false
+                },
+                "nextId": 2
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Hello my friend this is a test Jag vet inte ",
+        "options": [
+            {
+                "text": "Till test 1",
+                "choses": {
+                    "start": true
+                },
+                "nextId": 1
+            }
+        ]
+    }
+]
