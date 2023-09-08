@@ -1,12 +1,10 @@
 import json from "./story.json"
 
-export function program(element,) {
+export function program(element) {
     const textContainer = element.querySelector("#text_Container")
     const buttonContainer = element.querySelector('#button_Container')
     const startButton = element.querySelector('#start')
     let endGame = false
-
-    console.log(startButton)
 
     startButton.addEventListener("click", (e) => {
         start()
@@ -19,15 +17,23 @@ export function program(element,) {
 
     function run(position) {
         CheckEndGame(position)
-        if (endGame == false) {
+        
+        //ut side the story
+        if (position == json.length) {
+            removeContent()
+            printErrorOrEndScene("Story dose not exist", "There is no more story, sorry! Want to play again?", "Yes" )
 
+        } 
+        //running the game  
+        else if(endGame == false){
             //can use the data from the json file 
             let story = json[position]
-
+            
             //remove the content of the page 
             removeContent()
 
-            // Ska leta efter Id i story.json för att komma rätt 
+            //Print the titel 
+            printH1Element(story)
 
             //print the text
             printPElement(story)
@@ -35,16 +41,12 @@ export function program(element,) {
             //print the button and go to the next option 
             printButtonNextOption(story)
 
-        } else {
+        }
+        //ending
+        else {
             removeContent()
             //print the end scene content 
-            printEndScene()
-
-            let rebut = element.querySelector('#rebut')
-            //restart the game 
-            rebut.addEventListener("click", (e) => {
-                start()
-            })
+            printErrorOrEndScene("Story has ended","The game has ended, want to play again?", "Yes")
         }
     }
 
@@ -59,15 +61,21 @@ export function program(element,) {
         buttonContainer.innerHTML = ""
     }
 
+    function printH1Element(titelId){
+        let h1 = makeH1()
+        h1.innerHTML = titelId.titel
+        textContainer.appendChild(h1)
+    }
+
     function printPElement(textId){
-        let p = document.createElement("p")
+        let p = makeP()
         p.innerHTML = textId.text
         textContainer.appendChild(p)
     }
 
     function printButtonNextOption(storyId){
         storyId.options.forEach((options) => {
-            let newButton = document.createElement('button')
+            let newButton = makeButton()
             newButton.innerText = options.text
 
             newButton.addEventListener("click", () => {
@@ -78,17 +86,37 @@ export function program(element,) {
         })
     }
 
-    function printEndScene(){
-        let p = document.createElement("p")
-        let button = document.createElement("button")
+    function printErrorOrEndScene(h1Text ,pText, buttonText){
+        let h1 = makeH1()
+        let p = makeP()
+        let button = makeButton();
 
-        p.innerHTML = "The game has ended, want to play again?"
+        h1.innerHTML = h1Text
+        p.innerHTML = pText
         button.id = 'rebut'
-        button.innerHTML = "Yes"
+        button.innerHTML = buttonText
 
+        textContainer.appendChild(h1)
         textContainer.appendChild(p)
         buttonContainer.appendChild(button)
+
+        let rebut = element.querySelector('#rebut')
+            //restart the game 
+            rebut.addEventListener("click", (e) => {
+                start()
+            })
         
+    }
+
+    function makeH1(){
+        return document.createElement("h1")
+    }
+    function makeP(){
+        return document.createElement("p")
+    }
+
+    function makeButton(){
+        return document.createElement("button")
     }
 
     

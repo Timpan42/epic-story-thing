@@ -1,12 +1,13 @@
 [
     {
         "id": 0,
-        "text": "Hello my friend this is a test ",
+        "titel": "The beginning",
+        "text": " ",
         "options": [
             {
-                "text": "Till test 2",
+                "text": "",
                 "choses": {
-                    "start": true
+                    "start": {}
                 },
                 "nextId": 1
             }
@@ -14,17 +15,18 @@
     },
     {
         "id": 1,
-        "text": "Hello my friend this is a test 2",
+        "titel": "The beginning",
+        "text": "",
         "options": [
             {
-                "text": "Till test 1",
+                "text": "",
                 "choses": {
                     "start": true
                 },
                 "nextId": 0
             },
             {
-                "text": "Till test jag vet inte ",
+                "text": " ",
                 "choses": {
                     "start": false
                 },
@@ -34,7 +36,8 @@
     },
     {
         "id": 2,
-        "text": "Hello my friend this is a test Jag vet inte",
+        "titel": "The beginning",
+        "text": "",
         "options": [
             {
                 "text": "Till test 1",
