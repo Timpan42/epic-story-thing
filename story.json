@@ -34,7 +34,7 @@
     },
     {
         "id": 2,
-        "text": "Hello my friend this is a test Jag vet inte ",
+        "text": "Hello my friend this is a test Jag vet inte",
         "options": [
             {
                 "text": "Till test 1",
@@ -42,6 +42,13 @@
                     "start": true
                 },
                 "nextId": 1
+            },
+            {
+                "text": "End Game",
+                "choses": {
+                    "start": false
+                },
+                "nextId": -1
             }
         ]
     }
