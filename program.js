@@ -10,17 +10,19 @@ export function program(element, ) {
     })
     
     function start() {
-            run()
-            textContainer.innerHTML = ""
+            run(0)
         }
 
-    function run(position = 0){
-        let story = json[position]
+    function run(position){
         textContainer.innerHTML = ""
         buttonContainer.innerHTML = ""
 
+        let story = json[position]
+        
+        console.log(position)
+
         let p = document.createElement("p")
-        p.innerText = story.text
+        p.innerHTML = story.text
         textContainer.appendChild(p)
 
         story.options.forEach((options)=>{
@@ -28,7 +30,7 @@ export function program(element, ) {
             newButton.innerText = options.text
         
             newButton.addEventListener("click", () =>{
-                run(element, options.nextId)
+                run(options.nextId)
             })
 
             buttonContainer.appendChild(newButton)
