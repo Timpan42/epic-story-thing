@@ -5,9 +5,9 @@
         "text": "Once upon a time in a quirky little town called Veggieville, there lived a unique character named Tim Fagerdal. Tim was no ordinary resident of Veggieville; he was, in fact, a human fruit.Born from the enchanted orchards on the outskirts of town, Tim was a remarkable blend of human and fruit, with skin the color of a ripe peach and hair as green as Granny Smith apples. He had always been a source of wonder and curiosity for the townsfolk.",
         "options": [
             {
-                "text": "",
+                "text": "Next",
                 "choses": {
-                    "start": {}
+                    
                 },
                 "nextId": 1
             }
@@ -16,40 +16,69 @@
     {
         "id": 1,
         "titel": "The beginning",
-        "text": "",
+        "text": "But what set Tim apart from his fellow fruit-human hybrids was his insatiable passion for pasta. From a young age, he had been enchanted by the art of Italian cooking. He would often sneak into the local library to read cookbooks and watch pasta-making videos online, much to the amusement of the librarians who thought it was quite comical to see a fruit-human hybrid so engrossed in culinary pursuits.",
         "options": [
             {
-                "text": "",
+                "text": "Continue pursuing making pasta",
                 "choses": {
-                    "start": true
-                },
-                "nextId": 0
-            },
-            {
-                "text": " ",
-                "choses": {
-                    "start": false
+                    "makePasta": true
                 },
                 "nextId": 2
+            },
+            {
+                "text": "Keep making food as a hobby",
+                "choses": {
+                    "makePasta": true
+                },
+                "nextId": 3
+            },
+            {
+                "text": "Actually I don't like pasta",
+                "choses": {
+                    "makePasta": false
+                },
+                "nextId": 3
             }
         ]
     },
     {
         "id": 2,
-        "titel": "The beginning",
-        "text": "",
+        "titel": "Making pasta",
+        "text": "As Tim grew older, his love for pasta only deepened. He decided to turn his passion into a profession. He opened a little pasta shop in Veggieville called 'Tim's Pasta Paradise.' His pasta, a fusion of flavors. He experimented with pasta shapes and flavors that matched his fruit-human heritage, creating dishes like strawberry-stuffed ravioli and watermelon-infused linguine. But a lack of customers is worrying Tim. He needs something special to draw in a costumers",
         "options": [
             {
-                "text": "Till test 1",
+                "text": "",
                 "choses": {
-                    "start": true
+                    
+                },
+                "nextId": 4
+            },
+            {
+                "text": "",
+                "choses": {
+                    
+                },
+                "nextId": -1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "titel": "Trying some thing else",
+        "text": "As Tim grew older, his love for pasta only deepened. He decided to turn his passion into a profession. He opened a little pasta shop in Veggieville called 'Tim's Pasta Paradise.' His pasta was unlike anything anyone had ever tasted, a fusion of flavors that transcended the ordinary. He experimented with pasta shapes and flavors that matched his fruit-human heritage, creating dishes like strawberry-stuffed ravioli and watermelon-infused linguine.",
+        "options": [
+            {
+                "text": "hej",
+                "requiredChoses": { "makePasta": true }, 
+                "choses": {
+                    
                 },
                 "nextId": 1
             },
             {
-                "text": "End Game",
+                "text": "hej",
                 "choses": {
-                    "start": false
+                    
                 },
                 "nextId": -1
             }

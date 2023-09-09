@@ -32,14 +32,19 @@ kodningen börjas
 
 
 ## Historien  
+<!-- X -->
 Once upon a time in a quirky little town called Veggieville, there lived a unique character named Tim Fagerdal. Tim was no ordinary resident of Veggieville; he was, in fact, a human fruit. Born from the enchanted orchards on the outskirts of town, Tim was a remarkable blend of human and fruit, with skin the color of a ripe peach and hair as green as Granny Smith apples. He had always been a source of wonder and curiosity for the townsfolk.
 
+<!-- X -->
 But what set Tim apart from his fellow fruit-human hybrids was his insatiable passion for pasta. From a young age, he had been enchanted by the art of Italian cooking. He would often sneak into the local library to read cookbooks and watch pasta-making videos online, much to the amusement of the librarians who thought it was quite comical to see a fruit-human hybrid so engrossed in culinary pursuits.
 
+<!-- X -->
 As Tim grew older, his love for pasta only deepened. He decided to turn his passion into a profession. He opened a little pasta shop in Veggieville called "Tim's Pasta Paradise." His pasta was unlike anything anyone had ever tasted, a fusion of flavors that transcended the ordinary. He experimented with pasta shapes and flavors that matched his fruit-human heritage, creating dishes like strawberry-stuffed ravioli and watermelon-infused linguine.
 
+<!--  -->
 Word of Tim's Pasta Paradise spread far and wide, drawing food enthusiasts from neighboring towns and even beyond. His unique creations became legendary, and people couldn't resist the temptation to try the delectable dishes prepared by the human fruit.
 
+<!--  -->
 Tim's life was a whirlwind of pasta-making, but he loved every moment of it. He was always in high spirits, and his laughter filled the kitchen as he crafted his pasta masterpieces. He had a special connection with the ingredients, treating each one with the care and respect it deserved. His secret ingredient was his own fruit essence, which added a touch of magic to every dish he created.
 
 One day, a famous food critic named Isabella Truffleton visited Veggieville. She had heard about Tim's Pasta Paradise and wanted to taste the legendary pasta for herself. Tim was both excited and nervous about the visit. He prepared a special dish for Isabella—a pasta salad that incorporated the essence of every fruit in his lineage. It was a symphony of flavors and textures that left Isabella speechless.
