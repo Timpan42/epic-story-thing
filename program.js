@@ -85,7 +85,6 @@ export function program(element) {
                     choses = Object.assign(choses, options.choses)
                     run(options.nextId)
                 })
-                console.log(choses)
                 buttonContainer.appendChild(newButton)
             }
         })
@@ -94,8 +93,11 @@ export function program(element) {
     function checkRequiredChoses(options) {
         // fixa 
         if (options.requiredChoses) {
-            return options.requiredChoses.toString() == choses.toString()
-        } else {
+            return JSON.stringify(options.requiredChoses) === JSON.stringify(choses)
+         } //else if(options.){
+
+        // }
+        else {
             return options.requiredChoses == null
         }
     }

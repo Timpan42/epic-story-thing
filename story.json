@@ -35,7 +35,8 @@
             {
                 "text": "Actually I don't like pasta",
                 "choses": {
-                    "makePasta": false
+                    "makePasta": false,
+                    "test": true
                 },
                 "nextId": 3
             }
@@ -74,6 +75,14 @@
                     
                 },
                 "nextId": 1
+            },
+            {
+                "text": "hej",
+                "requiredChoses": {"test": true}, 
+                "choses": {
+                    
+                },
+                "nextId": 4
             },
             {
                 "text": "hej",
