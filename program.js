@@ -93,10 +93,8 @@ export function program(element) {
 
     function checkRequiredChoses(options) {
         // fixa 
-        console.log(options.requiredChoses === choses)
-        console.log(options.requiredChoses)
         if (options.requiredChoses) {
-            return options.requiredChoses === choses
+            return options.requiredChoses.toString() == choses.toString()
         } else {
             return options.requiredChoses == null
         }
