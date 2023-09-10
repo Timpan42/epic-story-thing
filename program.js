@@ -5,7 +5,8 @@ export function program(element) {
     const buttonContainer = element.querySelector('#button_Container')
     const startButton = element.querySelector('#start')
     let endGame = false
-    let choses = {}
+    let choses = []
+    let compareArrays
 
     startButton.addEventListener("click", (e) => {
         start()
@@ -14,7 +15,7 @@ export function program(element) {
     function start() {
         run(0)
         endGame = false
-        choses = {}
+        choses = []
     }
 
     function run(position) {
@@ -77,7 +78,7 @@ export function program(element) {
 
     function printButtonNextOption(storyId) {
         storyId.options.forEach((options) => {
-            if (checkRequiredChoses(options)){
+            if (checkRequiredChoses(options)) {
                 let newButton = makeButton()
                 newButton.innerText = options.text
 
@@ -94,12 +95,11 @@ export function program(element) {
         // fixa 
         if (options.requiredChoses) {
             return JSON.stringify(options.requiredChoses) === JSON.stringify(choses)
-         } //else if(options.){
-
-        // }
+        }
         else {
             return options.requiredChoses == null
         }
+
     }
 
     function printErrorOrEndScene(h1Text, pText, buttonText) {

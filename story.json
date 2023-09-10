@@ -6,9 +6,9 @@
         "options": [
             {
                 "text": "Next",
-                "choses": {
+                "choses": [{
                     
-                },
+                }],
                 "nextId": 1
             }
         ]
@@ -20,24 +20,23 @@
         "options": [
             {
                 "text": "Continue pursuing making pasta",
-                "choses": {
+                "choses": [{
                     "makePasta": true
-                },
+                }],
                 "nextId": 2
             },
             {
                 "text": "Keep making food as a hobby",
-                "choses": {
-                    "makePasta": true
-                },
+                "choses":[ 
+                    {"makePasta": true}
+                ],
                 "nextId": 3
             },
             {
                 "text": "Actually I don't like pasta",
-                "choses": {
-                    "makePasta": false,
-                    "test": true
-                },
+                "choses": [
+                    {"makePasta": false}
+                ],
                 "nextId": 3
             }
         ]
@@ -48,47 +47,49 @@
         "text": "As Tim grew older, his love for pasta only deepened. He decided to turn his passion into a profession. He opened a little pasta shop in Veggieville called 'Tim's Pasta Paradise.' His pasta, a fusion of flavors. He experimented with pasta shapes and flavors that matched his fruit-human heritage, creating dishes like strawberry-stuffed ravioli and watermelon-infused linguine. But a lack of customers is worrying Tim. He needs something special to draw in a costumers",
         "options": [
             {
-                "text": "",
-                "choses": {
-                    
-                },
+                "text": "Make a public spectacle",
+                "choses":[ {
+                    "spectacle": true
+                }],
                 "nextId": 4
             },
             {
-                "text": "",
-                "choses": {
-                    
-                },
-                "nextId": -1
+                "text": "Make a ad",
+                "choses":[ {
+                    "ad": true
+                }],
+                "nextId": 5
             }
         ]
     },
     {
         "id": 3,
         "titel": "Trying some thing else",
-        "text": "As Tim grew older, his love for pasta only deepened. He decided to turn his passion into a profession. He opened a little pasta shop in Veggieville called 'Tim's Pasta Paradise.' His pasta was unlike anything anyone had ever tasted, a fusion of flavors that transcended the ordinary. He experimented with pasta shapes and flavors that matched his fruit-human heritage, creating dishes like strawberry-stuffed ravioli and watermelon-infused linguine.",
+        "text": "As Tim grew older, the interest of food dwindled, but in the back of is mind there was still a want to pursue making food",
         "options": [
             {
-                "text": "hej",
-                "requiredChoses": { "makePasta": true }, 
-                "choses": {
-                    
-                },
-                "nextId": 1
+                "text": "Go to a culinary school",
+                "requiredChoses": [{ "makePasta": true }], 
+                "choses": [{
+                    "school": true
+                }],
+                "nextId": 6
             },
             {
-                "text": "hej",
-                "requiredChoses": {"test": true}, 
-                "choses": {
-                    
-                },
-                "nextId": 4
+                "text": "Start the experiment",
+                "requiredChoses": [
+                    {"makePasta": false}
+                ], 
+                "choses": [{
+                    "experiment": true
+                }],
+                "nextId": 7
             },
             {
-                "text": "hej",
-                "choses": {
+                "text": "Food is not intreating",
+                "choses": [{
                     
-                },
+                }],
                 "nextId": -1
             }
         ]
