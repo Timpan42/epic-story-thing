@@ -73,7 +73,7 @@
                 "choses": [{
                     "school": true
                 }],
-                "nextId": 6
+                "nextId": 10
             },
             {
                 "text": "Start the experiment",
@@ -93,5 +93,127 @@
                 "nextId": -1
             }
         ]
+    },
+    {
+        "id": 4,
+        "titel": "The spectacle",
+        "text": "",
+        "options": [
+            {
+                "text": "",
+                "choses":[ {
+                    "spectacle": true
+                }],
+                "nextId": 11
+            },
+            {
+                "text": "",
+                "choses":[ {
+                    "ad": true
+                }],
+                "nextId": 12
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "titel": "The ad",
+        "text": "",
+        "options": [
+            {
+                "text": "",
+                "choses":[ {
+                    "spectacle": true
+                }],
+                "nextId": 13
+            },
+            {
+                "text": "",
+                "choses":[ {
+                    "ad": true
+                }],
+                "nextId": 14
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "titel": "Making pasta",
+        "text": "As Tim grew older, his love for pasta only deepened. He decided to turn his passion into a profession. He opened a little pasta shop in Veggieville called 'Tim's Pasta Paradise.' His pasta, a fusion of flavors. He experimented with pasta shapes and flavors that matched his fruit-human heritage, creating dishes like strawberry-stuffed ravioli and watermelon-infused linguine. But a lack of customers is worrying Tim. He needs something special to draw in a costumers",
+        "options": [
+            {
+                "text": "Make a public spectacle",
+                "choses":[ {
+                    "spectacle": true
+                }],
+                "nextId": 4
+            },
+            {
+                "text": "Make a ad",
+                "choses":[ {
+                    "ad": true
+                }],
+                "nextId": 5
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "titel": "Experiment?",
+        "text": "Tim asked his uncle to use his 'Laboratory', the unaimed uncle, that deals with 'pure flour', said yes. When experimenting with meat and some unknown chemicals, a weird creature started to crawl out of the microwave. What is its name?",
+        "options": [
+            {
+                "text": "Name",
+                "choses":[ {
+                    "meatMonster": true
+                }],
+                "input": true,
+                "nextId": 8
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "titel": "Experiment?",
+        "text": "The meat monsters name is:",
+        "meatName": true,
+        "options": [
+            {
+                "text": "Next",
+                "choses":[ {
+                    "meatMonster": true
+                }],
+                "nextId": 9
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "titel": "The epic adventure",
+        "text": "Tim and his meat friend began on a epic adventure that would have been written in the history books! But He was eaten by the meat monster :[",
+        "options": [
+            {
+                "text": "End",
+                "choses":[ {
+                    "meatMonster": true
+                }],
+                "nextId": -1
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "titel": "School",
+        "text": "Tim started to study at Johnson and Wales University, but they did not talk about pasta in the furst minute so Tim dropout",
+        "options": [
+            {
+                "text": "End",
+                "choses":[ {
+
+                    }],
+                "nextId": -1
+            }
+        ]
     }
+
 ]

@@ -18,6 +18,9 @@ document.querySelector('#app').innerHTML = `
     <div id="button_Container">
       <button id="start" > YES </button>
     </div>
+    <div id="input_Container">
+      
+    </div>
 
 </main>
 `

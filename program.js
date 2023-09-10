@@ -4,9 +4,11 @@ export function program(element) {
     const textContainer = element.querySelector("#text_Container")
     const buttonContainer = element.querySelector('#button_Container')
     const startButton = element.querySelector('#start')
+    const inputContainer = element.querySelector('#input_Container')
     let endGame = false
     let choses = []
-    let compareArrays
+    let meatName = ""
+    let wrongName = false
 
     startButton.addEventListener("click", (e) => {
         start()
@@ -16,6 +18,7 @@ export function program(element) {
         run(0)
         endGame = false
         choses = []
+        meatName = ""
     }
 
     function run(position) {
@@ -62,37 +65,96 @@ export function program(element) {
     function removeContent() {
         textContainer.innerHTML = ""
         buttonContainer.innerHTML = ""
+        inputContainer.innerHTML = ""
     }
 
     function printH1Element(titelId) {
-        let h1 = makeH1()
-        h1.innerHTML = titelId.titel
-        textContainer.appendChild(h1)
+
+        if (wrongName) {
+            let h1 = makeH1()
+            h1.innerHTML = ":|"
+            textContainer.appendChild(h1)
+        } 
+        else {
+            let h1 = makeH1()
+            h1.innerHTML = titelId.titel
+            textContainer.appendChild(h1)
+        }
     }
 
     function printPElement(textId) {
-        let p = makeP()
-        p.innerHTML = textId.text
-        textContainer.appendChild(p)
+        if (wrongName) {
+            let p = makeP()
+            p.innerHTML = ":|"
+            textContainer.appendChild(p)
+            wrongName = false
+        } 
+        else if(textId.meatName){
+            let p = makeP()
+            p.innerHTML = textId.text + " " + meatName
+            textContainer.appendChild(p)
+        } 
+        else {
+            let p = makeP()
+            p.innerHTML = textId.text
+            textContainer.appendChild(p)
+        }
+
     }
 
     function printButtonNextOption(storyId) {
         storyId.options.forEach((options) => {
-            if (checkRequiredChoses(options)) {
-                let newButton = makeButton()
-                newButton.innerText = options.text
+            if (checkInputField(options)) {
+                if (checkRequiredChoses(options)) {
+                    let newInputField = makeInput()
+                    let newButton = makeButton()
 
-                newButton.addEventListener("click", () => {
-                    choses = Object.assign(choses, options.choses)
-                    run(options.nextId)
-                })
-                buttonContainer.appendChild(newButton)
+                    newInputField.id = 'msg'
+                    newButton.innerText = options.text
+
+                    newButton.addEventListener("click", () => {
+
+                        const msg = element.querySelector('#msg').value;
+                        let stringCompare = msg.toLowerCase()
+
+                        if (stringCompare === "tim") {
+                            meatName = "TimTim"
+                            wrongName = true
+                        } else {
+                            meatName = msg
+                        }
+                        choses = Object.assign(choses, options.choses)
+                        run(options.nextId)
+                        console.log(meatName)
+                    })
+
+                    inputContainer.appendChild(newInputField)
+                    inputContainer.appendChild(newButton)
+                }
+            } else {
+                if (checkRequiredChoses(options)) {
+                    let newButton = makeButton()
+                    newButton.innerText = options.text
+
+                    newButton.addEventListener("click", () => {
+                        choses = Object.assign(choses, options.choses)
+                        run(options.nextId)
+                    })
+                    buttonContainer.appendChild(newButton)
+                }
             }
         })
     }
 
+    function checkInputField(options) {
+        if (options.input) {
+            return true
+        } else {
+            return false
+        }
+    }
+
     function checkRequiredChoses(options) {
-        // fixa 
         if (options.requiredChoses) {
             return JSON.stringify(options.requiredChoses) === JSON.stringify(choses)
         }
@@ -135,5 +197,8 @@ export function program(element) {
         return document.createElement("button")
     }
 
+    function makeInput() {
+        return document.createElement("INPUT")
+    }
 
 }
