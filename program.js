@@ -25,7 +25,7 @@ export function program(element) {
         CheckEndGame(position)
 
         //ut side the story
-        if (position == json.length) {
+        if (position >= json.length) {
             removeContent()
             printErrorOrEndScene("Story dose not exist", "There is no more story, sorry! Want to play again?", "Yes")
 
