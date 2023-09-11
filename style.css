@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: #f0efed;
-  background-color: #331D2C;
+  background-color: #24141f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,7 +27,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -37,10 +36,12 @@ h1 {
   line-height: 1.1;
 }
 
+.h1Box {}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
 }
 
@@ -68,17 +69,33 @@ h1 {
 }
 
 input {
-  background-color: #EFE1D1;
+  background-color: #beb5aa;
   color: black;
+  border-radius: 4px;
   margin-right: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  transition: background-color 0.25s;
 }
+
+input:focus {
+  background-color: #EFE1D1;
+}
+
 
 p {
   font-size: 1.3rem;
   text-align: left;
 }
 
-.start{
+.pBox {
+  place-items: center;
+  margin-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.start {
   text-align: center;
 }
 
@@ -93,11 +110,13 @@ button {
   color: black;
   background-color: #EFE1D1;
   cursor: pointer;
+  border-width: 0.2rem;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #356120;
+  border-width: 0.2rem;
 }
 
 button:focus,
@@ -105,7 +124,27 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+.buttonBox {
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width:600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .pBox {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -118,7 +157,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 /*
   @media (prefers-color-scheme: dark) {

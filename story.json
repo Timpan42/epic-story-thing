@@ -86,7 +86,7 @@
                 "nextId": 7
             },
             {
-                "text": "Food is not intreating",
+                "text": "Food is not interesting",
                 "choses": [{
                     
                 }],
@@ -160,7 +160,7 @@
     {
         "id": 7,
         "titel": "Experiment?",
-        "text": "Tim asked his uncle to use his 'Laboratory', the unaimed uncle, that deals with 'pure flour', said yes. When experimenting with meat and some unknown chemicals, a weird creature started to crawl out of the microwave. What is its name?",
+        "text": "Tim asked his uncle to use his 'Laboratory', the unnamed uncle, that deals with 'pure flour', said yes. When experimenting with meat and some unknown chemicals, a weird creature started to crawl out of the microwave. What is its name?",
         "options": [
             {
                 "text": "Name",

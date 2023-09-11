@@ -15,7 +15,7 @@ Samt kan det finns text input val om man ska gå någon stans.
 ### del 4
 **Färger:**
 
-bakgrund `#331D2C`
+bakgrund `#24141f`
 
 Knappar `#EFE1D1`
 

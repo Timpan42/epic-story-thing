@@ -2,6 +2,8 @@ import json from "./story.json"
 
 export function program(element) {
     const textContainer = element.querySelector("#text_Container")
+    const h1Container = element.querySelector("#h1_Container")
+    const pContainer = element.querySelector("#p_Container")
     const buttonContainer = element.querySelector('#button_Container')
     const startButton = element.querySelector('#start')
     const inputContainer = element.querySelector('#input_Container')
@@ -18,7 +20,6 @@ export function program(element) {
         run(0)
         endGame = false
         choses = []
-        meatName = ""
     }
 
     function run(position) {
@@ -63,7 +64,8 @@ export function program(element) {
     }
 
     function removeContent() {
-        textContainer.innerHTML = ""
+        h1Container.innerHTML = ""
+        pContainer.innerHTML = ""
         buttonContainer.innerHTML = ""
         inputContainer.innerHTML = ""
     }
@@ -73,12 +75,12 @@ export function program(element) {
         if (wrongName) {
             let h1 = makeH1()
             h1.innerHTML = ":|"
-            textContainer.appendChild(h1)
+            h1Container.appendChild(h1)
         } 
         else {
             let h1 = makeH1()
             h1.innerHTML = titelId.titel
-            textContainer.appendChild(h1)
+            h1Container.appendChild(h1)
         }
     }
 
@@ -86,18 +88,18 @@ export function program(element) {
         if (wrongName) {
             let p = makeP()
             p.innerHTML = ":|"
-            textContainer.appendChild(p)
+            pContainer.appendChild(p)
             wrongName = false
         } 
         else if(textId.meatName){
             let p = makeP()
             p.innerHTML = textId.text + " " + meatName
-            textContainer.appendChild(p)
+            pContainer.appendChild(p)
         } 
         else {
             let p = makeP()
             p.innerHTML = textId.text
-            textContainer.appendChild(p)
+            pContainer.appendChild(p)
         }
 
     }
@@ -120,7 +122,11 @@ export function program(element) {
                         if (stringCompare === "tim") {
                             meatName = "TimTim"
                             wrongName = true
-                        } else {
+                        } 
+                        else if(stringCompare === ""){
+                            meatName = "Bob"
+                        } 
+                        else {
                             meatName = msg
                         }
                         choses = Object.assign(choses, options.choses)
@@ -174,8 +180,8 @@ export function program(element) {
         button.id = 'rebut'
         button.innerHTML = buttonText
 
-        textContainer.appendChild(h1)
-        textContainer.appendChild(p)
+        h1Container.appendChild(h1)
+        pContainer.appendChild(p)
         buttonContainer.appendChild(button)
 
         let rebut = element.querySelector('#rebut')
