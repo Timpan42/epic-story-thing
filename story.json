@@ -125,21 +125,21 @@
                 "choses":[ {
                     "makeAd": true
                 }],
-                "nextId": 0
+                "nextId": 100
             },
             {
                 "text": "Call your friends",
                 "choses":[ {
                     "makeAdFriends": true
                 }],
-                "nextId": 0
+                "nextId": 100
             },
             {
                 "text": "Hire a marketer",
                 "choses":[ {
                     "ad": true
                 }],
-                "nextId": 0
+                "nextId": 100
             }
         ]
     },
@@ -246,7 +246,7 @@
     {
         "id": 12,
         "titel": "The spectacle",
-        "text": "With the knowledge from his aunt, Tim drew a big cirkel on the ground, adding on line, two lines, three, four, five lines. Forming a pentagram. Every where the liens contact the circle he added a circle. Tim sat in the middle of the big circle and started to hum.",
+        "text": "With the knowledge from his aunt, Tim drew a big cirkel on the ground, adding on line, two lines, three, four, five lines. Forming a pentagram. Every where the lines made contact the circle he added a circle. Tim sat in the middle of the big circle and started to hum.",
         "options": [
             {
                 "text": "Next",
@@ -321,7 +321,7 @@
     {
         "id": 17,
         "titel": "The audience",
-        "text": "Nearly all of the towns people was now surrounding Tim's pasta paradise, wondering why this man hade so much passion for pasta. Every day Walter White talked about pasta, and every day more and more people would join. It was like a cult. But people were baying Tim's pasta, so business was booming",
+        "text": "Nearly all of the towns people was now surrounding Tim's pasta paradise, wondering why this man hade so much passion for pasta. Every day Walter White talked about pasta, and every day more and more people would join. It was like a cult. But people were buying Tim's pasta, so business was booming",
         "options": [
             {
                 "text": "Next",
@@ -336,6 +336,20 @@
         "id": 18,
         "titel": "The audience",
         "text": "But one day when the revolt happened, all that Tim Fagerdal built went to dust. And Walter White created tyrannical government, but we should not talk about that",
+        "options": [
+            {
+                "text": "End",
+                "choses":[ {
+                    
+                }],
+                "nextId": -1
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "titel": "Give 'Pure flower'",
+        "text": "",
         "options": [
             {
                 "text": "End",
