@@ -97,19 +97,19 @@
     {
         "id": 4,
         "titel": "The spectacle",
-        "text": "",
+        "text": "There is many ways one can make a spectacle, Tim could only think of two. The first is using his uncles 'pure flour' from his 'Laboratory', and the other is Walter White",
         "options": [
             {
-                "text": "",
+                "text": "Pure flour",
                 "choses":[ {
                     "spectacle": true
                 }],
                 "nextId": 11
             },
             {
-                "text": "",
+                "text": "Walter White",
                 "choses":[ {
-                    "ad": true
+                    "Walter-White": true
                 }],
                 "nextId": 12
             }
@@ -118,21 +118,28 @@
     {
         "id": 5,
         "titel": "The ad",
-        "text": "",
+        "text": "Tim has no experience in marketing, making it on his own perhaps is not the best idea. Tim does have friends that have some experience in a certain type of marketing, but they often takes it to far. Maybe hiring a marketer is the best idea",
         "options": [
             {
-                "text": "",
+                "text": "Do it on your own",
                 "choses":[ {
-                    "spectacle": true
+                    "makeAd": true
                 }],
-                "nextId": 13
+                "nextId": 0
             },
             {
-                "text": "",
+                "text": "Call your friends",
+                "choses":[ {
+                    "makeAdFriends": true
+                }],
+                "nextId": 0
+            },
+            {
+                "text": "Hire a marketer",
                 "choses":[ {
                     "ad": true
                 }],
-                "nextId": 14
+                "nextId": 0
             }
         ]
     },
@@ -214,6 +221,130 @@
                 "nextId": -1
             }
         ]
+    },
+    {
+        "id": 11,
+        "titel": "The spectacle",
+        "text": "",
+        "options": [
+            {
+                "text": "Give out 'Pure flower'",
+                "choses":[ {
+                    "spectacle": true
+                }],
+                "nextId": 19
+            },
+            {
+                "text": "Frow the 'Pure flower' on people",
+                "choses":[ {
+                    "walterWhite": true
+                }],
+                "nextId": 20
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "titel": "The spectacle",
+        "text": "With the knowledge from his aunt, Tim drew a big cirkel on the ground, adding on line, two lines, three, four, five lines. Forming a pentagram. Every where the liens contact the circle he added a circle. Tim sat in the middle of the big circle and started to hum.",
+        "options": [
+            {
+                "text": "Next",
+                "choses":[ {
+                    
+                }],
+                "nextId": 13 
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "titel": "The spectacle",
+        "text": "'Walter', Tim said once. 'I need your help.' From the brushes 20 meters away from Tim, a man started to walk towards him. When the man was 2 meters from Tim he said with a deep growling voice 'What do you need'",
+        "options": [
+            {
+                "text": "Walter, preach about Tim's Pasta Paradise",
+                "choses":[ {
+                    "walterPreach": true
+                }],
+                "nextId": 14
+            },
+            {
+                "text": "Walter, summon a audience",
+                "choses":[ {
+                    "WalterSummen": true
+                }],
+                "nextId": 16
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "titel": "Walter Preach",
+        "text": "Walter started to preach 'My dear congregation, life has a way of taking us down unexpected paths, much like my journey from a simple chemistry teacher to the empire I built. Tim's Pasta Paradise, too, has a story of transformation, from humble beginnings to culinary excellence.' Walter continued preaching 'ust as I had to learn the intricacies of the drug trade, Tim and his team have mastered the art of pasta-making, crafting dishes that delight the senses and transport you to a world of flavors.'",
+        "options": [
+            {
+                "text": "Next",
+                "choses":[ {
+                }],
+                "nextId": 15
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "titel": "Walter Preach",
+        "text": "Meanwhile, when Walter was preaching Tim was in his kitchen making dishes. But he didn't see a increase in customers, in mather of fact the customers went away. Tim's Pasta Paradise closed down shortly after",
+        "options": [
+            {
+                "text": "End",
+                "choses":[ {
+                }],
+                "nextId": -1
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "titel": "The audience",
+        "text": "Walter White, summoned an audience by harnessing his charisma, intelligence, and powerful presence. He crafted a compelling message that resonates with the audience's desires or fears. Then he employed dramatic storytelling to create a sense of urgency or excitement.",
+        "options": [
+            {
+                "text": "Next",
+                "choses":[ {
+                    
+                }],
+                "nextId": 17
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "titel": "The audience",
+        "text": "Nearly all of the towns people was now surrounding Tim's pasta paradise, wondering why this man hade so much passion for pasta. Every day Walter White talked about pasta, and every day more and more people would join. It was like a cult. But people were baying Tim's pasta, so business was booming",
+        "options": [
+            {
+                "text": "Next",
+                "choses":[ {
+                    
+                }],
+                "nextId": 18
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "titel": "The audience",
+        "text": "But one day when the revolt happened, all that Tim Fagerdal built went to dust. And Walter White created tyrannical government, but we should not talk about that",
+        "options": [
+            {
+                "text": "End",
+                "choses":[ {
+                    
+                }],
+                "nextId": -1
+            }
+        ]
     }
-
 ]
+
