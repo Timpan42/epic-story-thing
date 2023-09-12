@@ -6,9 +6,9 @@
         "options": [
             {
                 "text": "Next",
-                "choses": [{
-                    
-                }],
+                "choses": [
+                    {}
+                ],
                 "nextId": 1
             }
         ]
@@ -20,22 +20,28 @@
         "options": [
             {
                 "text": "Continue pursuing making pasta",
-                "choses": [{
-                    "makePasta": true
-                }],
+                "choses": [
+                    {
+                        "makePasta": true
+                    }
+                ],
                 "nextId": 2
             },
             {
                 "text": "Keep making food as a hobby",
-                "choses":[ 
-                    {"makePasta": true}
+                "choses": [
+                    {
+                        "makePasta": true
+                    }
                 ],
                 "nextId": 3
             },
             {
                 "text": "Actually I don't like pasta",
                 "choses": [
-                    {"makePasta": false}
+                    {
+                        "makePasta": false
+                    }
                 ],
                 "nextId": 3
             }
@@ -48,16 +54,20 @@
         "options": [
             {
                 "text": "Make a public spectacle",
-                "choses":[ {
-                    "spectacle": true
-                }],
+                "choses": [
+                    {
+                        "spectacle": true
+                    }
+                ],
                 "nextId": 4
             },
             {
                 "text": "Make a ad",
-                "choses":[ {
-                    "ad": true
-                }],
+                "choses": [
+                    {
+                        "ad": true
+                    }
+                ],
                 "nextId": 5
             }
         ]
@@ -69,27 +79,37 @@
         "options": [
             {
                 "text": "Go to a culinary school",
-                "requiredChoses": [{ "makePasta": true }], 
-                "choses": [{
-                    "school": true
-                }],
+                "requiredChoses": [
+                    {
+                        "makePasta": true
+                    }
+                ],
+                "choses": [
+                    {
+                        "school": true
+                    }
+                ],
                 "nextId": 10
             },
             {
                 "text": "Start the experiment",
                 "requiredChoses": [
-                    {"makePasta": false}
-                ], 
-                "choses": [{
-                    "experiment": true
-                }],
+                    {
+                        "makePasta": false
+                    }
+                ],
+                "choses": [
+                    {
+                        "experiment": true
+                    }
+                ],
                 "nextId": 7
             },
             {
                 "text": "Food is not interesting",
-                "choses": [{
-                    
-                }],
+                "choses": [
+                    {}
+                ],
                 "nextId": -1
             }
         ]
@@ -101,16 +121,20 @@
         "options": [
             {
                 "text": "Pure flour",
-                "choses":[ {
-                    "spectacle": true
-                }],
+                "choses": [
+                    {
+                        "spectacle": true
+                    }
+                ],
                 "nextId": 11
             },
             {
                 "text": "Walter White",
-                "choses":[ {
-                    "Walter-White": true
-                }],
+                "choses": [
+                    {
+                        "Walter-White": true
+                    }
+                ],
                 "nextId": 12
             }
         ]
@@ -122,23 +146,29 @@
         "options": [
             {
                 "text": "Do it on your own",
-                "choses":[ {
-                    "makeAd": true
-                }],
+                "choses": [
+                    {
+                        "makeAd": true
+                    }
+                ],
                 "nextId": 100
             },
             {
                 "text": "Call your friends",
-                "choses":[ {
-                    "makeAdFriends": true
-                }],
+                "choses": [
+                    {
+                        "makeAdFriends": true
+                    }
+                ],
                 "nextId": 100
             },
             {
                 "text": "Hire a marketer",
-                "choses":[ {
-                    "ad": true
-                }],
+                "choses": [
+                    {
+                        "ad": true
+                    }
+                ],
                 "nextId": 100
             }
         ]
@@ -150,16 +180,20 @@
         "options": [
             {
                 "text": "Make a public spectacle",
-                "choses":[ {
-                    "spectacle": true
-                }],
+                "choses": [
+                    {
+                        "spectacle": true
+                    }
+                ],
                 "nextId": 4
             },
             {
                 "text": "Make a ad",
-                "choses":[ {
-                    "ad": true
-                }],
+                "choses": [
+                    {
+                        "ad": true
+                    }
+                ],
                 "nextId": 5
             }
         ]
@@ -171,9 +205,11 @@
         "options": [
             {
                 "text": "Name",
-                "choses":[ {
-                    "meatMonster": true
-                }],
+                "choses": [
+                    {
+                        "meatMonster": true
+                    }
+                ],
                 "input": true,
                 "nextId": 8
             }
@@ -187,9 +223,11 @@
         "options": [
             {
                 "text": "Next",
-                "choses":[ {
-                    "meatMonster": true
-                }],
+                "choses": [
+                    {
+                        "meatMonster": true
+                    }
+                ],
                 "nextId": 9
             }
         ]
@@ -201,9 +239,11 @@
         "options": [
             {
                 "text": "End",
-                "choses":[ {
-                    "meatMonster": true
-                }],
+                "choses": [
+                    {
+                        "meatMonster": true
+                    }
+                ],
                 "nextId": -1
             }
         ]
@@ -215,9 +255,9 @@
         "options": [
             {
                 "text": "End",
-                "choses":[ {
-
-                    }],
+                "choses": [
+                    {}
+                ],
                 "nextId": -1
             }
         ]
@@ -229,17 +269,21 @@
         "options": [
             {
                 "text": "Give out 'Pure flower'",
-                "choses":[ {
-                    "spectacle": true
-                }],
+                "choses": [
+                    {
+                        "spectacle": true
+                    }
+                ],
                 "nextId": 19
             },
             {
-                "text": "Frow the 'Pure flower' on people",
-                "choses":[ {
-                    "walterWhite": true
-                }],
-                "nextId": 20
+                "text": "Throw the 'Pure flower' on people",
+                "choses": [
+                    {
+                        "walterWhite": true
+                    }
+                ],
+                "nextId": 26
             }
         ]
     },
@@ -250,10 +294,10 @@
         "options": [
             {
                 "text": "Next",
-                "choses":[ {
-                    
-                }],
-                "nextId": 13 
+                "choses": [
+                    {}
+                ],
+                "nextId": 13
             }
         ]
     },
@@ -264,16 +308,20 @@
         "options": [
             {
                 "text": "Walter, preach about Tim's Pasta Paradise",
-                "choses":[ {
-                    "walterPreach": true
-                }],
+                "choses": [
+                    {
+                        "walterPreach": true
+                    }
+                ],
                 "nextId": 14
             },
             {
                 "text": "Walter, summon a audience",
-                "choses":[ {
-                    "WalterSummen": true
-                }],
+                "choses": [
+                    {
+                        "WalterSummen": true
+                    }
+                ],
                 "nextId": 16
             }
         ]
@@ -285,8 +333,9 @@
         "options": [
             {
                 "text": "Next",
-                "choses":[ {
-                }],
+                "choses": [
+                    {}
+                ],
                 "nextId": 15
             }
         ]
@@ -298,8 +347,9 @@
         "options": [
             {
                 "text": "End",
-                "choses":[ {
-                }],
+                "choses": [
+                    {}
+                ],
                 "nextId": -1
             }
         ]
@@ -311,9 +361,9 @@
         "options": [
             {
                 "text": "Next",
-                "choses":[ {
-                    
-                }],
+                "choses": [
+                    {}
+                ],
                 "nextId": 17
             }
         ]
@@ -325,9 +375,9 @@
         "options": [
             {
                 "text": "Next",
-                "choses":[ {
-                    
-                }],
+                "choses": [
+                    {}
+                ],
                 "nextId": 18
             }
         ]
@@ -339,9 +389,9 @@
         "options": [
             {
                 "text": "End",
-                "choses":[ {
-                    
-                }],
+                "choses": [
+                    {}
+                ],
                 "nextId": -1
             }
         ]
@@ -349,16 +399,133 @@
     {
         "id": 19,
         "titel": "Give 'Pure flower'",
-        "text": "",
+        "text": "Every day between 06:00, and 09:00 am, Tim would oppen his little stal. He would give out small sample of the 'Pure flower' to the towns people, promising them that his pasta is made with 'Pure flower'.",
+        "options": [
+            {
+                "text": "Next",
+                "choses": [
+                    {}
+                ],
+                "nextId": 20
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "titel": "Give 'Pure flower'",
+        "text": "This was a brilliant idea, he hade a 100 procent returning costumer base. It was increasing slowly but when the people was hooked on Tim's pasta, they would never get away from it.",
+        "options": [
+            {
+                "text": "Next",
+                "choses": [
+                    {}
+                ],
+                "nextId": 21
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "titel": "Hooked on Tim's pasta",
+        "text": "Months went by, the costumer was just ordering larger and larger meals, to the point of it being excessive. But the amount of money Tim was making was enough that he could open multible Tim's pasta paradise, around the country.",
+        "options": [
+            {
+                "text": "Next",
+                "choses": [
+                    {}
+                ],
+                "nextId": 22
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "titel": "FBI",
+        "text": "one day the FBI was right in front Tim's hus, trying to arrest him for 'having drogs in Tim's pasta paradise's pasta', it was then he knew it was over. What did Tim do next?",
+        "options": [
+            {
+                "text": "He gave up",
+                "choses": [
+                    {
+                        "gaveUp": true
+                    }
+                ],
+                "nextId": 23
+            },
+            {
+                "text": "Trying to defend him self with a gun",
+                "choses": [
+                    {
+                        "gun": true
+                    }
+                ],
+                "nextId": 24
+            },
+            {
+                "text": "Run",
+                "choses": [
+                    {
+                        "run": true
+                    }
+                ],
+                "nextId": 25
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "titel": "Hooked on Tim's pasta",
+        "text": "Tim Fagerdal gave up, opening the so the FBI could search his house. The FBI agent found all the secrets about the 'Pure flower', Tim where arrest. Later Tim needed to serve a 100 year sentens in jail",
         "options": [
             {
                 "text": "End",
-                "choses":[ {
-                    
-                }],
+                "choses": [
+                    {}
+                ],
+                "nextId": -1
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "titel": "Hooked on Tim's pasta",
+        "text": "In trying to not get arrested Tim grabbed a his gun. When ordered to drop the gun, he refused, and threatened to use the firearm. On that day Tim did not walk away.",
+        "options": [
+            {
+                "text": "End",
+                "choses": [
+                    {}
+                ],
+                "nextId": -1
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "titel": "Hooked on Tim's pasta",
+        "text": "Tim ran through his house to the back door, but he did not notice that the house was surrounded by the FBI and the polis. Tim where arrest, later he needed to serve a 100 year sentens in jail",
+        "options": [
+            {
+                "text": "End",
+                "choses": [
+                    {}
+                ],
+                "nextId": -1
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "titel": "Throw the 'Pure flower'",
+        "text": "Tim throw the 'Pure flower' on the people walking by his shop. He was later arrested.",
+        "options": [
+            {
+                "text": "End",
+                "choses": [
+                    {}
+                ],
                 "nextId": -1
             }
         ]
     }
 ]
-
